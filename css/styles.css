@@ -1,11 +1,19 @@
 /*
-Author: Maria Cruz
-Date: Current Date
-File Name: styles.css
+	Student Name: Jin Fitzmaurice
+	File Name: styles.css
+	Today's Date: Feb. 25. 2025
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1, h3 {
+body,
+header,
+nav,
+main,
+footer,
+img,
+ul,
+h1,
+h3 {
     margin: 0;
     padding: 0;
     border: 0;
@@ -21,6 +29,40 @@ img {
     display: block;
 }
 
+/*Style rules for mobile viewport*/
+
+/*Style rules to show mobile class and hide tab-desk class*/
+.mobile {
+    display: block;
+}
+
+.tab-desk {
+    display: none;
+}
+
+.mobile h1 {
+    font-family: "Emblema One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.mobile h3 {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+/*Not sure what to do with the <weight>, that's the way google had it 
+ * and Im not sure if I should change it or take it out*/
+
+/*Style rules for header area*/
+.mobile h1,
+.mobile h3 {
+    padding: 2%;
+    text-align: center;
+}
+
 /* Style rules for navigation area */
 nav {
     background-color: #2a1f14;
@@ -28,15 +70,16 @@ nav {
 
 nav ul {
     list-style-type: none;
-    margin: 0;
     text-align: center;
 }
 
 nav li {
-    display: inline-block;
+    display: block;
     font-size: 1.5em;
     font-family: Geneva, Arial, sans-serif;
     font-weight: bold;
+    border-top-width: 0.5px;
+    color: #f6eee4
 }
 
 nav li a {
@@ -77,8 +120,36 @@ main ul {
     text-align: center;
 }
 
+.round {
+    border-radius: 6px;
+}
+
+#info {
+    margin-left: 10%
+}
+
 #contact {
     text-align: center;
+}
+
+.tel-link {
+    background-color: #2a1f14;
+    padding: 2%;
+    width: 80%;
+    margin: 0, auto;
+}
+
+.tel-link a {
+    color: #f6eee4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.lora {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
 
 /* Style rules for footer content */
